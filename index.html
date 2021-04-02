@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imarte Comunicaciones</title>
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="media/logo1.png">
+</head>
+<body>
+    <header>
+        <div class="centrao">
+            <ul class="tam" style="float: left">
+                <li class ="logu" ><a href="#"><img class="banner_image" src="media/logo1.png"></a></li>
+            </ul>
+            <ul class="tam" style="float: right">
+                <li> <a class="active" href="index.html"> Inicio </a></li>
+                <li> <a href="servicios.html"> Servicios </a></li>
+                <!--<li> <a href="historia.html"> Historia </a></li>-->
+                <li> <a href="contacto.html"> Contacto </a></li>
+                <li> <a href="trabaje con nosotros.html"> Soporte Técnico </a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="left_side">
+            <div class="sub_left">
+                <h2>
+                    Servicio Eficiente y confiable
+                </h2>
+            </div>
+            <div class="slider">
+                <div id="imga">
+                    <img class="imga" src="media/publicidad1.jpg">
+                </div>  
+            </div>
+        </div>
+
+        <!--add javascript -->
+        <script>
+            var img = document.getElementById("imga");
+            var imagenes = ['media/publicidad1.jpg','media/publicidad2.jpg','media/publicidad3.jpg','media/publicidad4.jpg'];
+            var x = 0;
+            function slide() {
+                if (x < imagenes.length) {
+                    x= x+1;
+                }else{
+                    x=1;
+                }
+                img.innerHTML = "<img class='imga' src="+imagenes[x-1]+">";
+            }
+            //auto slide
+            setInterval(slide,8000);
+        </script>
+
+        <div class="rigth-container">
+            
+            <div class="descripcion">
+                <div class="auto">
+                    <a href="servicios.html">
+                    <img class ="img_unidades" src="media/laptop.jpg" alt="img_unidades">
+                    </a>
+                </div>
+                <div class="auto">
+                    <a href="servicios.html">
+                    <img class ="img_unidades" src="media/celular.jpg" alt="img_unidades">
+                    </a>
+                </div>
+                <div class="auto">
+                    <a href="servicios.html">
+                    <img class ="img_unidades" src="media/Android.jpg" alt="img_unidades">
+                    </a>
+                    </div>
+                <div class="auto">
+                    <a href="servicios.html">
+                    <img class ="img_unidades" src="media/compu.jpg" alt="img_unidades">
+                    </a>
+                </div>
+                <div class="auto">
+                    <a href="servicios.html">
+                    <img class ="img_unidades" src="media/router.jpg" alt="img_unidades">
+                    </a>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="info-container">
+        <div class="info-main">
+            <h3>Clientes</h3>
+            <p>
+                <img class ="img_clientes" src="media/logo2.jpg" alt="img_clientes">
+            </p>
+            <a href="https://wa.me/message/TYNZ3DXAQEOZM1">Mas Informacion</a>
+        </div>
+    </div>    
+    <footer>
+        <div style="background: rgb(25, 28, 50);" class ="footer-container">
+            <div class="footer-main">
+                <div class="footer-columna">
+                    <h3>Metodos de Pago</h3>
+                    <p class="p_tex">ʏᴀᴘᴇ 962280256</p>
+                    <p class="p_tex">ᴛʀᴀɴsғᴇʀᴇɴᴄɪᴀ ʙᴄᴘ</p>
+                    <p class="p_tex">BBVA Continental</p>
+                </div>
+               
+
+                <div class="footer-columna">
+                    <h3>Dirección</h3>
+                    <span class="fa fa-phone">962280256-(falta)</span>
+                    <span class="fa fa-envelope">heron@imartecomunicaciones.com</span>
+                </div>
+
+                <div class="footer-columna">
+                    <h3>Sobre Nosotros</h3>
+                    <p class="p_tex">
+                        Ofrecemos el servicio de internet ilimitado, diseño grafico, servicios de comunity manager. Somos
+                        equipo dedicado a la informática y a las telecomunicaciones, con un servicio eficiente y confiable de internet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy-redes">
+            <div class="main-copy-redes">
+                <div class="footer-copy">
+                    &copy; 2021, Todos los derechos reservados - | Imarte Comunicaciones |. 
+                </div>
+                <div class="footer-redes">
+                    <a href="https://www.facebook.com/imartecomunicaciones/" class="fa fa-facebook"></a>
+                    <a href="https://wa.me/message/TYNZ3DXAQEOZM1" class="fa fa-whatsapp"></a>
+                    <a href="https://github.com/Luis-Huachaca-HV" class="fa fa-github"></a>
+                </div>
+            </div>
+        </div>
+    </footer>       
+</body>
+</html>

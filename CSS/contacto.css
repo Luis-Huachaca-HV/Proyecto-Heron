@@ -1,0 +1,167 @@
+.s-tittle {
+    margin-top: 110px;
+}
+.sub {
+    background-color: #191c32;
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+}
+
+  
+section{
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  width:90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: rgb(27, 166, 247);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: .3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+.ul_pago {
+  background-color: #191C32;
+  padding: 0px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  color : #B537F2;
+  align-items: flex-start;
+}
+
+.cua_1 p{
+  color: white;
+}
+.cua_1 h3 {
+  color: white;
+}
+.info-main p{
+  color: white;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #111;
+  }
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 70px 70px 70px;
+}
+.cua_1 {
+    width: 150px;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 5%;
+    border-width: 3px;
+    background-color: rgb(25, 28, 50);
+}
+
+.hache2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+} 
+
+h3 {
+  margin: 10px 0px 10px 0px;
+}
+
+p {
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 767px) {
+  .s-tittle{margin-top: 90px;}
+}
+@media screen and (max-width: 479px) {
+  
+  .s-tittle{
+    margin-top: 80px;
+  }
+}
